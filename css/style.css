@@ -1,0 +1,144 @@
+
+#content{
+    max-width: 100%;
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+}
+.titulo{
+    box-shadow: 15px 0 0 0 #ffe2c2, -5px 0 0 0 #ffe2c2;
+	background: #ffe2c2;
+	display: inline;
+	padding: 3px 0 !important;
+	position: relative;
+}
+::selection {
+    background:  #ffe2c2;
+}
+/*SOBRE*/
+#sobre{
+    padding-top: 5%;
+}
+@media (min-width: 320px) {
+    #sobre{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+@media (min-width: 1300px) {
+    #sobre{
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+}
+/*SOBRE*/
+
+/*ALIMENTAÇÃO*/
+#alimentacao{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#alimentacao img{
+    width: 80%;
+}
+@media (min-width: 320px) {
+    #alimentacao{
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+}
+@media (min-width: 1300px) {
+    #alimentacao{
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+}
+/*ALIMENTAÇÃO*/
+
+
+/*SAÚDE E HIGIENE*/
+#saude{
+    background-color: #117a8b;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#duas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.saude-img img{
+    width: 70%;
+}
+.saude-img{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.lista{
+    float: right;
+    width: 50%;
+}
+#duas{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#duas div{
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding-top: 0;
+}
+
+@media (min-width: 320px) {
+    #saude{
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+}
+@media (min-width: 1300px) {
+    #saude{
+        padding-right: 24%;
+        padding-left: 24%;
+    }
+}
+@media (max-width: 600px) {
+    .saude-img img {
+        width: 80%;
+        padding: 10px;
+    }
+    .lista{
+        padding-right: 10%;
+        padding-left: 10%;
+        text-align: center;
+    }
+}
+/*SAÚDE E HIGIENE*/
+
+/*AMBIENTE*/
+#ambiente{
+    padding-top: 5%;
+}
+@media (min-width: 320px) {
+    #ambiente{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+@media (min-width: 1300px) {
+    #ambiente{
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+}
+/*AMBIENTE*/
+
+/*UTENSÍLIOS*/
+#utencilios{
+    padding-top: 5%;
+}
+/*UTENSÍLIOS*/

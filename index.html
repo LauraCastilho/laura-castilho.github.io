@@ -38,15 +38,24 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#alimentacao">Alimentação</a>
                 <a class="dropdown-item" href="#saude">Saúde e Higiene</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#ambiente">Ambiente</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#utensilios">Utensílios</a>
+                <a class="dropdown-item" href="#ambiente">Ambiente</a>
+                <a class="dropdown-item" href="#utencilios">Utensílios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#recomendacoes">Recomendações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#dados">Dados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a onclick="mutar()">
+                <div id="icone">
+                  
+                </div>
+              </a>
             </li>
             
           </ul>
@@ -96,6 +105,28 @@
           <section id="sobre">
                 <h1 class="titulo">Sobre nós</h1><br><br>
                 <p>Seja bem vindo(a) ao nosso site, Vida dos Pets. Nele você encontrará muitas informações relacionadas à vida do seu bichinho de estimação e recomendações sobre como melhorar o seu relacionamento com o seu animalzinho. Esperamos que esse site seja útil para você :)</p>
+                <p>Para uma melhor experiência, escolha uma música para ouvir enquanto desfruta do nosso conteúdo.</p>
+
+                <p><b class="nome-musicas">Pitty - Serpente</b></p>
+                <p>
+                  <audio controls class="audio">
+                    <source src="musicas/Musica 1.mp3" type="audio/mp3">
+                  </audio>
+                </p>
+
+                <p><b class="nome-musicas">Elis Regina & Tom Jobim - Aguas de Março</b></p>
+                <p>
+                  <audio controls class="audio">
+                    <source src="musicas/Musica 2.mp3" type="audio/mp3">
+                  </audio>
+                </p>
+
+                <p><b class="nome-musicas">Roberta Campos e Nando Reis - De Janeiro A Janeiro</b></p>
+                <p>
+                  <audio controls class="audio">
+                    <source src="musicas/Musica 3.mp3" type="audio/mp3">
+                  </audio>
+                </p>
           </section>
         <!--SOBRE-->
 
@@ -121,7 +152,7 @@
             A seguir, as principais dicas, para que você possa colocar em prática e garantir muita alegria e saúde para o seu amigão!</p><br>
             <div id="duas">
               <div class="saude-img">
-                <img src="img/saude/veterinario.jpg">
+                <img class= "d-none d-md-block" src="img/saude/veterinario.jpg">
               </div>
               <div class="lista">
                 <p>1. Não esqueça de fazer a vacinação</p>
@@ -146,7 +177,8 @@
 
         <section id="ambiente">
           <h1 class="titulo">Ambiente</h1><br><br>
-          <p>Seja bem vindo(a) ao nosso site, Vida dos Pets. Nele você encontrará muitas informações relacionadas à vida do seu bichinho de estimação e recomendações sobre como melhorar o seu relacionamento com o seu animalzinho. Esperamos que esse site seja útil para você :)</p>
+          <p>Nossos amigos peludos também precisam de um lar doce lar confortável e seguro. É preciso garantir que o cachorro tenha seu espaço, além do tamanho certo de casa para sua raça. Ele precisa de uma área só dele no apartamento ou na casa, com seus brinquedos, sua casinha e até um espaço para fazer suas necessidades quando você não tiver tempo para um passeio com ele. Se caso você tiver uma área externa e recursos para a construção de um canil para abrigar o seu cachorro – ou cachorros – é preciso considerar alguns fatores como a luz solar, uma necessidade que o seu cãozinho tem para fortalecer os ossos. Além disso, a luz do sol ajuda a esterilizar o ambiente.</p> 
+          <p>Cães são animais de toca, por isso gostam e precisam ter uma casinha coberta, que transmita segurança. O tamanho ideal tem que dar espaço suficiente para que eles consigam ficar em pé sobre as quatro patas e deem uma volta sobre o próprio corpo dentro da área. Mas o espaço tem que ser um pouco grande para que o dono consiga limpá-lo sem muitas dificuldades.</p>       
         </section>
 
         <!--AMBIENTE-->
@@ -154,7 +186,7 @@
         <!--UTENSÍLIOS-->
 
           <section id="utencilios">
-            <h1 class="titulo">Utensílios mais importantes</h1><br><br><br>
+            <h1 class="titulo recomendacoes-titulo">Utensílios mais importantes</h1><br><br><br>
 
             <div id="itens">
 
@@ -168,7 +200,7 @@
                             <br>
                             <br>
                             <h1>Comedouro</h1> 
-                            <p>"Quando meu filho fez um ano nos mudamos para o Japão, aprendemos muito com a cultura deles ..."</p>
+                            <p class="texto-flip">Você precisa ter um comemouro para alimentação e outro para água. Existem tigelas de materiais e formatos diferentes. O tamanho vai depender do tamanho que seu peludo tem.</p>
                           </div>
                         </div>
                       </div>
@@ -184,7 +216,7 @@
                         <br>
                         <br>
                         <h1>Caminha</h1> 
-                        <p>"Quando meu filho fez um ano nos mudamos para o Japão, aprendemos muito com a cultura deles ..."</p>
+                        <p class="texto-flip">A caminha é o refúgio do cachorro, onde ele vai quando precisa descansar e quando quer se sentir protegido. Compre uma que o acomode confortavelmente.</p>
                       </div>
                     </div>
                   </div>
@@ -200,7 +232,7 @@
                         <br>
                         <br>
                         <h1>Identificação</h1> 
-                        <p>"Quando meu filho fez um ano nos mudamos para o Japão, aprendemos muito com a cultura deles ..."</p>
+                        <p class="texto-flip">A coleira com identificação deve estar no seu cãozinho o tempo todo, porque caso ele consiga fugir, quem o encontrar vai conseguir entrar em contato com você.</p>
                       </div>
                     </div>
                   </div>
@@ -216,7 +248,7 @@
                         <br>
                         <br>
                         <h1>Gaiola</h1> 
-                        <p>"Quando meu filho fez um ano nos mudamos para o Japão, aprendemos muito com a cultura deles ..."</p>
+                        <p class="texto-flip">Quando você precisar levar seu peludo para algum lugar, como ao veterinário ou a um parque mais longe, você precisará de uma gaiola para levá-lo com segurança</p>
                       </div>
                     </div>
                   </div>
@@ -232,7 +264,7 @@
                         <br>
                         <br>
                         <h1>Coleira</h1> 
-                        <p>"Quando meu filho fez um ano nos mudamos para o Japão, aprendemos muito com a cultura deles ..."</p>
+                        <p class="texto-flip">Ao sair, é fundamental que o peludo esteja de coleira, para ficar seguro e aproveitar melhor os passeios com o dono. </p>
                       </div>
                     </div>
                   </div>
@@ -248,7 +280,7 @@
                         <br>
                         <br>
                         <h1>Brinquedos</h1> 
-                        <p>"Quando meu filho fez um ano nos mudamos para o Japão, aprendemos muito com a cultura deles ..."</p>
+                        <p class="texto-flip">Brinquedos são ótimos para o cãozinho usar junto com você, assim como para se distrair e diminuir a ansiedade quando ele estiver sozinho. </p>
                       </div>
                     </div>
                   </div>
@@ -262,20 +294,213 @@
         <!--RECOMENDAÇÕES-->
 
           <section id="recomendacoes">
-            <h1 class="titulo">Recomendações</h1><br><br>
-            <p>Seja bem vindo(a) ao nosso site, Vida dos Pets. Nele você encontrará muitas informações relacionadas à vida do seu bichinho de estimação e recomendações sobre como melhorar o seu relacionamento com o seu animalzinho. Esperamos que esse site seja útil para você :)</p>
+
+            <h1 class="titulo recomendacoes-titulo">Recomendações</h1><br><br>
+
+            <div id="recomendacoes-texto">
+
+              <section id="primeiro">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-4 col-lg-4 d-none d-md-block">
+                        <img class="rounded-circle recomendacao-img" src="img/recomendacoes/passeio.jpg">
+                    </div>
+                    <div class="col-md-8 col-lg-8">
+                      <div class="p-4">
+                        <h3>Leve seu cão para passear</h3>
+                        <p>Um cachorro preso dentro de casa não faz bem nem a ninguém. Isso influencia na saúde do animal e, consecutivamente, no bem-estar de todos. E o seu cãozinho faz parte da família, não é? Então, o relacionamento entre vocês depende dos mesmos mecanismos que mantêm a família sempre unida: boas conversas, companheirismo, amor e, claro, bons passeios! Sendo assim, é importante passear com cachorro com frequência.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-8 col-lg-8">
+                      <div class="p-4">
+                        <h3>Ensine a usar o tapetinho</h3>
+                        <p>O tapete higiênico para cachorro é uma alternativa muito prática. Esses tapetes foram criados para evitar o mau cheiro e a sujeira, oferecendo mais conforto ao animal e mais comodidade aos donos. Toda vez que o seu cãozinho urina no tapete higiênico, ela é rapidamente absorvida, neutralizando o odor e evitando o mau cheiro. Não há contaminação da superfície pelo xixi, mantendo o ambiente mais limpo.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 d-none d-md-block">
+                      <img class="rounded-circle recomendacao-img" src="img/recomendacoes/tapete.jpg">
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-4 col-lg-4 d-none d-md-block">
+                      <img class="rounded-circle recomendacao-img" src="img/recomendacoes/rotina.jpg">
+                    </div>
+                    <div class="col-md-8 col-lg-8">
+                      <div class="p-4">
+                        <h3>Crie uma rotina</h3>
+                        <p>Para os cãezinhos, ter hábitos é muito importante: eles são capazes de reduzir a ansiedade e o estresse, proporcionando benefícios físicos e psicológicos. Portanto, é bom saber como e por que organizar a rotina de cachorro, para promover uma vida muito melhor a esses bichinhos. Com a rotina (sabendo quando vai comer, passear e brincar), o cachorro se torna mais seguro e disciplinado e melhora a sua interação com o tutor.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-8 col-lg-8">
+                      <div class="p-4">
+                        <h3>Cuide da saúde do seu bichinho</h3>
+                        <p>Para manter o seu amigo saudável é necessário, cuidar da vacinação, levá-lo ao veterinário periodicamente, dar muito carinho e atenção, ajudá-lo com a higiene, fornecer uma alimentação de qualidade, deixar o ambiente sempre limpo e adequado, evitar pulgas, carrapatos e vermes, entre muitos outros cuidados que um cachorro precisa. Portanto, pense bem antes de adotar um e arque com as responsabilidades.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 d-none d-md-block">
+                        <img class="rounded-circle recomendacao-img" src="img/recomendacoes/saude.jpg">
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </div>
+
           </section>
         
         <!--RECOMENDAÇÕES-->
 
+        <!--VÍDEO-->
+        <section class="d-none d-md-block" id="video">
+          <h1 class="titulo">Um vídeo para te deixar feliz</h1><br><br>
+          <iframe width="880" height="480" src="https://www.youtube.com/embed/cvbWvtSsAC0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <!--VÍDEO-->
+
+        <!--DADOS-->
+        <section id="dados">
+          <h1 class="titulo">Dados</h1><br><br>
+          <p>Abaixo está uma estimativa da quantidade de cachorros que temos no Brasil e em qual situação eles vivem.</p>
+
+            <div class="table-responsive-sm tabela">
+                <table class="table">
+                  <thead>
+                    <tr class="bg-info">
+                      <th scope="col">Situação</th>
+                      <th scope="col">Estimativa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Abandonados</td>
+                      <td><span data-toggle="counter-up">20000000000</span></td>
+                    </tr>
+                    <tr>
+                      <td>Adotados</td>
+                      <td><span data-toggle="counter-up">5020040</span></td>
+                    </tr>
+                    <tr>
+                      <td>Comprados</td>
+                      <td><span data-toggle="counter-up">10540320</span></td>
+                    </tr>
+                    <tr>
+                      <th>Total</th>
+                      <td><span data-toggle="counter-up">20015560360</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+        </section>
+        <!--DADOS-->
+
+        <!--SAIBA MAIS-->
+        <section id="saiba">
+          <h1 class="titulo">Saiba Mais</h1><br><br>
+
+          <div id="cards">
+
+            <div class="card" style="width: 18rem;">
+              <img src="img/cards/doenca.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <br>
+                <h5 class="card-title"><b>Como prevenir doenças caninas</b></h5>
+                <p class="card-text">Veja 8 táticas simples para seu cachorro não passar doenças, nem ser infectado</p>
+                <a href="https://saude.abril.com.br/vida-animal/8-taticas-para-seu-cachorro-nao-passar-doencas-nem-ser-infectado/" target="_blank" class="btn btn-info">Saiba Mais</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="img/cards/pug.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <br>
+                <h5 class="card-title"><b>Mamãe ou papai de primeira viagem?</b></h5>
+                <p class="card-text">Veja 7 dicas para quem quer adotar um animal de estimação pela primeira vez</p>
+                <a href="https://www.gazetadopovo.com.br/viver-bem/animal/7-dicas-para-quem-quer-adotar-um-animal-de-estimacao/" target="_blank" class="btn btn-info">Saiba Mais</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="img/cards/cinomose.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <br>
+                <h5 class="card-title"><b>Cinomose em cães, saiba como prevenir</b></h5>
+                <p class="card-text">Veja como proteger o seu bichinho dessa doença grave e altamente contagiosa</p>
+                <a href="https://www.metropoles.com/colunas-blogs/e-o-bicho/cinomose-em-caes-saiba-como-prevenir-a-doenca" target="_blank" class="btn btn-info">Saiba Mais</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <!--SAIBA MAIS-->
+
       </section>
       <!--CONTEÚDO-->
 
+      <!--CONTATO-->
+      <section id="contato">
+        
+        <div id="entrar-contato">
+          <h3>Entre em contato</h3>
+          <img src="img/rodape/gmail.png">
+          <p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCHrkVmDFhQbZdfNJbzqCwCmDmcZNKTdTfsDKmJtCTvnjmDHXbHJCJWnFWKNBpXJqMBgxsWg" target="_blank">laura.andrade.castilho@gmail.com</a></p>
+          <img src="img/rodape/whatsapp.png">
+          <p><a href="tel:xx55964140097">96414-0097</a></p>
+        </div>
+
+        <div id="achar-veterinario" class="d-none d-md-block">
+
+          <h3>Ache um veterinario próximo a você</h3>
+          <input name="cidade" placeholder="Digite a sua cidade" type="text" class="form-control Pesquisar" />
+          <br>
+          <input name="estado" placeholder="Digite a sua UF" type="text" class="form-control Pesquisar" />
+          
+          <br>
+          <button class="btn btn-info" onclick="acharweb()">
+            Pesquisar
+          </button>
+        </div>
+
+      </section>
+    <!--CONTATO-->
+
+      <!--RODAPÉ-->
+      <footer>
+        <p>&copy; Laura Castilho 2020</p>
+      </footer>
+      <!--RODAPÉ-->
+
     <!-- LINKS JAVASCRIPT -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/counterup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/mutar.js"></script>
+    <script type="text/javascript" src="js/buscar.js"></script>
     
   </body>
 </html>

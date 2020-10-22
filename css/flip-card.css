@@ -56,6 +56,10 @@
     width: 90%;
     object-fit: cover;
 }
+.texto-flip{
+    padding-right: 10px;
+    padding-left: 10px;
+}
 
 @media (min-width: 320px) {
     #itens {

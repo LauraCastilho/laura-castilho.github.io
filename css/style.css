@@ -1,7 +1,16 @@
+html{
+    scroll-behavior: smooth;
+}
 
 #content{
     max-width: 100%;
     text-align: center;
+}
+#saude, #video, #ambiente{
+    margin-top: 10%;
+}
+#ambiente{
+    margin-top: 5%;
 }
 h1{
     font-size: 3rem;
@@ -11,7 +20,7 @@ h1{
 	background: #ffe2c2;
 	display: inline;
 	padding: 3px 0 !important;
-	position: relative;
+    position: relative;
 }
 ::selection {
     background:  #ffe2c2;
@@ -31,6 +40,12 @@ h1{
         margin-right: 30%;
         margin-left: 30%;
     }
+}
+.audio{
+    max-width: 80%;
+}
+.nome-musicas{
+    font-size: 15px;
 }
 /*SOBRE*/
 
@@ -142,3 +157,139 @@ h1{
     padding-top: 5%;
 }
 /*UTENSÍLIOS*/
+
+/*REDOMENDAÇÕES*/
+#recomendacoes{
+    padding-top: 10%;
+}
+.recomendacao-img{
+    width: 60%;
+}
+#recomendacoes-texto section{
+    padding-top: 8%;
+}
+#primeiro{
+    padding-top: 3% !important;
+}
+@media (max-width: 375px) {
+    #recomendacoes-texto section{
+        padding-top: 5%;
+    }
+    .recomendacoes-titulo{
+        font-size: 2.5rem;
+    }
+}
+/*REDOMENDAÇÕES*/
+
+/*VÍDEO*/
+.video-responsive{overflow:hidden;padding-bottom:56.25%;position:relative;height:0;margin:30px 0px}
+.video-responsive iframe{left:0;top:0;height:100%;width:100%;position:absolute;}
+/*VÍDEO*/
+
+/*DADOS*/
+.tabela{
+    max-width: 70%;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 15%;
+}
+#dados{
+    padding-top: 10%;
+}
+@media (max-width: 375px) {
+    td{
+        font-size: 16px;
+    }
+}
+/*DADOS*/
+
+/*SAIBA MAIS*/
+#saiba{
+    padding-top: 10%;
+}
+.card{
+    
+    margin-bottom: 20px;
+}
+
+#cards img{
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#cards div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    align-items: center;
+}
+#cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+#cards div{
+    flex-grow: 1;
+    flex-basis: 260px;
+    padding: 0 10px;
+    text-align: center;
+}
+/*SAIBA MAIS*/
+
+/*CONTATO*/
+#contato{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #117a8b;
+    width: 100%;
+}
+#contato img{
+    width: 10%;
+}
+#entrar-contato a{
+    text-decoration: none;
+    color: #212529;
+}
+#entrar-contato a:hover{
+    color: #ffe2c2;
+}
+.Pesquisar{
+    text-align: center;
+}
+@media screen and (min-width: 768px){
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        max-height: 50vh;
+        width: 100%;
+    }
+}
+/*CONTATO*/
+
+/*RODAPÉ*/
+footer{
+    background-color: #117a8b;
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+/*RODAPÉ*/

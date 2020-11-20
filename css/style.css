@@ -6,7 +6,7 @@ html{
     max-width: 100%;
     text-align: center;
 }
-#saude, #video, #ambiente{
+#saude, #video, #ambiente, #onde{
     margin-top: 10%;
 }
 #ambiente{
@@ -204,6 +204,33 @@ h1{
     }
 }
 /*DADOS*/
+
+/*ONDE ADOTAR*/
+#onde{
+    background-color: #117a8b;
+    border-radius: 5px;
+    padding: 70px;
+}
+@media (min-width: 320px) {
+    #onde{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+@media (min-width: 1300px) {
+    #onde{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+}
+.exemplo{
+    text-decoration: none;
+    color: #ffe2c2;
+}
+.exemplo:hover{
+    color: #ffe2c2;
+}
+/*ONDE ADOTAR*/
 
 /*SAIBA MAIS*/
 #saiba{
